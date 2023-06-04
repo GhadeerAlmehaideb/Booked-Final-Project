@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".signup">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/cardview_dark_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/full_name"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/cardview_dark_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColorHighlight="@color/background"
+            android:textColorLink="@color/background"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/cardview_dark_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contactno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/contact_no"
+            android:inputType="phone"
+            android:textColorHighlight="@color/background"
+            android:textColorLink="@color/background"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/cardview_dark_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/background"
+            android:textColorLink="@color/background"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/cardview_dark_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cpasswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/background"
+            android:textColorLink="@color/background"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radio_group"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColorHighlight="@color/background"
+            android:textColorLink="@color/background"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/male"
+            android:textColorHighlight="@color/background"
+            android:textColorLink="@color/background"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/female"
+            android:textColorHighlight="@color/background"
+            android:textColorLink="@color/background"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/regs"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

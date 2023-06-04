@@ -1,0 +1,70 @@
+<!-- list_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewPubYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewISBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/rentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/background"
+            android:text="Rent"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#ff0000"
+            android:textColor="#FFF"
+            android:text="Delete"/>
+
+        <Button
+            android:id="@+id/returnButton"
+            android:background="@drawable/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
